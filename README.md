@@ -1,6 +1,6 @@
 # Minecraft Bedrock NPM Updater
 
-![Icon](.\src\assets\icon.png) <!-- Replace with the path to your icon -->
+![Icon](https://github.com/CaptainCooky/mc-npm-updater/blob/main/src/assets/icon.png)
 
 ## Overview
 
