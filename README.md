@@ -85,11 +85,11 @@ We welcome contributions from the community! If you'd like to contribute, please
 
 ## Issues
 
-If you encounter any issues or have suggestions for improvements, please report them on the (GitHub Issues page)[https://github.com/CaptainCooky/mc-npm-updater/issues].
+If you encounter any issues or have suggestions for improvements, please report them on the [GitHub Issues page](https://github.com/CaptainCooky/mc-npm-updater/issues).
 
 ## License
 
-This project is licensed under the MIT License. See the (LICENSE)[https://github.com/CaptainCooky/mc-npm-updater/blob/main/LICENSE.md] file for more details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/CaptainCooky/mc-npm-updater/blob/main/LICENSE.md) file for more details.
 
 ## About CrossXover Gaming
 
