@@ -93,4 +93,6 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 
 ## About CrossXover Gaming
 
-CrossXover Gaming is a development studio focused on creating practical and useful tools for developers, particularly in the Minecraft community. We aim to simplify the development process and help creators bring their ideas to life.
+CrossXover Gaming is a small but passionate development studio founded by Captain Cooky. We focus on creating practical and useful tools for developers and content creators, especially within the Minecraft community. Our work supports and collaborates with creators like TersHD, ArtsByKev, and Nexus Mob Studio.
+
+We're dedicated to building tools that make the development process easier and more efficient, whether you're working on a Minecraft project or other creative endeavors. At CrossXover Gaming, we're all about sharing what we've learned and helping others bring their ideas to life.
