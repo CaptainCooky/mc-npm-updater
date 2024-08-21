@@ -3,7 +3,8 @@
   "displayName": "Minecraft Bedrock NPM Updater",
   "description": "A lightweight & configurable npm package updater for Minecraft Bedrock scripting API node modules",
   "version": "1.0.0",
-  "icon": "src/assets/icon.png",
+  "publisher": "CrossXOverGaming",
+  "icon": "icon.png",
   "repository": {
     "url": "https://github.com/CaptainCooky/mc-npm-updater.git"
   },
