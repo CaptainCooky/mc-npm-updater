@@ -89,7 +89,7 @@ If you encounter any issues or have suggestions for improvements, please report 
 
 ## License
 
-This project is licensed under the MIT License. See the (LICENSE)[https://github.com/CaptainCooky/mc-npm-updater/blob/main/LICENSE] file for more details.
+This project is licensed under the MIT License. See the (LICENSE)[https://github.com/CaptainCooky/mc-npm-updater/blob/main/LICENSE.md] file for more details.
 
 ## About CrossXover Gaming
 
