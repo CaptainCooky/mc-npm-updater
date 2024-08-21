@@ -1,0 +1,96 @@
+{
+  "name": "mc-npm-updater",
+  "displayName": "Minecraft Bedrock NPM Updater",
+  "description": "A lightweight & configurable npm package updater for Minecraft Bedrock scripting API node modules",
+  "version": "1.0.0",
+  "icon": "src/assets/icon.png",
+  "repository": {
+    "url": "https://github.com/CaptainCooky/mc-npm-updater.git"
+  },
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onCommand:extension.updateMinecraftModules"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "properties": {
+        "minecraftModules.enableAutoUpdate": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable auto-update for Minecraft modules."
+        },
+        "minecraftModules.scheduleUpdate": {
+          "type": "string",
+          "default": "daily",
+          "description": "Schedule updates (options: daily, weekly, monthly)."
+        },
+        "minecraftModules.enabledModules": {
+          "type": "array",
+          "default": [
+            "@minecraft/server",
+            "@minecraft/server-ui",
+            "@minecraft/math",
+            "@minecraft/vanilla-data",
+            "@minecraft/common",
+            "@minecraft/core-build-tasks",
+            "@minecraft/server-admin",
+            "@minecraft/server-gametest",
+            "@minecraft/server-net",
+            "@minecraft/server-editor",
+            "@minecraft/debug-utilities"
+          ],
+          "description": "List of Minecraft modules to auto-update."
+        },
+        "minecraftModules.userDefinedModules": {
+          "type": "array",
+          "default": [],
+          "description": "User-defined modules to auto-update."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "extension.updateMinecraftModules",
+        "title": "Update Minecraft Modules",
+        "category": "Minecraft Bedrock NPM Updater"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/node-schedule": "^2.1.7",
+    "@types/vscode": "^1.92.0",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "esbuild": "^0.21.5",
+    "eslint": "^8.57.0",
+    "node-schedule": "^2.1.1",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.4.5"
+  }
+}
